@@ -1,0 +1,15 @@
+package com.company;
+
+import java.util.Random;
+
+public class CoinToss {
+    public  String tossACoin(){
+        Random random = new Random();
+        int toss = Math.abs(random.nextInt()) % 2;
+        if(toss == 0){
+            return "HEADS";
+        }else{
+            return "TAILS";
+        }
+    }
+}
